@@ -4,9 +4,12 @@
 }
 
 body,a {
-	color: #fff;
+	color: black;
 	font-family: "Arial", sans-serif;
 	font-size: 14px;
+}
+body{
+  padding: 10px 10% 10px;
 }
 
 a {
@@ -32,11 +35,14 @@ li {
 .navbar {
     width: 100%;
 	background-color: #191919;
+  color: white;
 	padding: 12px 30px;
 	font-family: "Arial", sans-serif;
     height: 50px; 
 }
-
+.navbar a{
+  color: white;
+}
 .navbar__logo {
     /* background-color: yellow; */
 	font-size: 2em; 
@@ -88,6 +94,7 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background: yellow;
 }
 
 /* Hide the images by default */

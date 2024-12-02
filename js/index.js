@@ -38,3 +38,42 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// Open weather -------
+/* Weather API
+* https://openweathermap.org/current#name
+* https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch
+*/
+
+console.clear();
+// const temperature = document.querySelector("#temperature");
+const temperature = document.getElementById("temperature");
+const city = document.getElementById("city");
+const description = document.getElementById("description");
+const icon = document.getElementById("icon");
+
+async function currentWeather() {
+	/* City information
+	* https://openweathermap.org/api/geocoding-api
+	*/
+    const data = await fetch(
+		`https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=eb033ff797572dbf5b7af2e6327d1f3c
+`
+	)
+		.then((response) => {
+			response.json()
+				.then(function (data) {				
+					const img = document.createElement("img");
+					
+					/* Icon documentation
+					* https://openweathermap.org/weather-conditions
+					*/
+					img.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);	
+					icon.appendChild(img);
+				
+					city.innerText = data.name;
+					description.innerText = data.weather[0].description;
+					temperature.innerText = `${data.main.temp} °C`;
+				});
+		});
+}
+currentWeather();

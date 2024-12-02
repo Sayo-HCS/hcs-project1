@@ -1,0 +1,23 @@
+:root {
+	--size: 200px;
+}
+
+img {
+	width: 100%;
+}
+
+.weather {
+	width: var(--size);
+	height: var(--size);
+	/* background-color: blue; */
+	color: black;
+	padding: 10px 20px;
+    background-color: rgb(241, 200, 230);
+    border: solid 1px;
+    border-radius: 10%;
+}
+
+.icon {
+	display: flex;
+	width: 50px;
+}
