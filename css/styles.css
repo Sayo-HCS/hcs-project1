@@ -220,7 +220,7 @@ img {
 body{
   font-family:"Montserrat", sans-serif;
 }
-svg{
+.footer__section svg{
   width:30px;
   height:30px;
   fill:grey;
@@ -235,16 +235,16 @@ svg{
   align-content:center;
   gap:100px;
 }
-ul{
+/* ul{
   list-style-type:none;
-}
-a{
+} */
+.footer__section ul li a{
   display:block; 
   color:grey;
-  text-decoration:none;
+  /* text-decoration:none; */
   padding:10px 0px;
 }
-a:hover{
+.footer__section ul li a:hover{
   color:blue;
 }
 .footer__section{
@@ -256,7 +256,7 @@ a:hover{
   height:2px;
   margin-bottom:10px;
 } */
-h3::after{
+.footer__section h3::after{
   content:"";
   display:block;
   width:50px;
@@ -264,7 +264,7 @@ h3::after{
   background-color:red;
   margin-top:10px;
 }
-h3{
+.footer__section h3{
   color:white;
   padding: 5px 0px;
 }
