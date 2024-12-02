@@ -206,7 +206,7 @@ img {
 	padding: 0;
 }
 .card {
-    width: 160px;
+    /* width: 100px; */
 	border: 1px solid black;
 	color: black;
 	font-family: "Arial", sans-serif;
@@ -217,6 +217,9 @@ img {
 }
 
 /* -------footer -------*/
+:root{
+  --color-bg:#1B1F1E;
+}
 body{
   font-family:"Montserrat", sans-serif;
 }
