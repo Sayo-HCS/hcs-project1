@@ -96,8 +96,10 @@ img {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
   margin: auto;
-  background: yellow;
+  background: rgb(195, 153, 69);
 }
 
 /* Hide the images by default */
@@ -190,9 +192,20 @@ img {
 	}
 } --------is not worked -----*/
 
+/* ------- text after the slider------- */
+.textContainer-after-slider {
+  /* background-color: #f8d1a4; */
+ margin:0 auto ;
+  width: 75%;
+  
+}
+
+
+
 /* -------Cads------- */
 .cardsContainer {
-    height: 100vh;
+  /* background-color: red; */
+  margin-bottom: 50px;
 	display: flex;
 	align-items: center;
 }
@@ -206,7 +219,7 @@ img {
 	padding: 0;
 }
 .card {
-    /* width: 100px; */
+    width: 100px;
 	border: 1px solid black;
 	color: black;
 	font-family: "Arial", sans-serif;
@@ -285,3 +298,10 @@ body{
   }
   
 }  */
+
+/* ------- 1~4 pages layout -------*/
+.top-scrib {
+  margin: 20px auto;
+  width: 75%;
+  font-size: large;
+}
